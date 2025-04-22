@@ -1,10 +1,11 @@
-from selenium import webdriver
+from selenium.webdriver import Edge
+driver = Edge()
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # Настройка WebDriver
-driver = webdriver.Chrome(executable_path='C:\WebdriverEdge\msedgedriver.exe')
+driver = webdriver.Edge(executable_path='C:\WebdriverEdge\msedgedriver.exe')
 
 try:
     # Открываем сайт
